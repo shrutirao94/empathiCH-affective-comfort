@@ -13,6 +13,8 @@
 \documentclass[manuscript, anonymous, review]{acmart}
 \usepackage{todonotes}
 \usepackage{xcolor}
+\usepackage{subfig}
+\usepackage{caption}
 
 %% Fonts used in the template cannot be substituted; margin 
 %% adjustments are not allowed.
@@ -172,36 +174,67 @@ Human-building interaction (HBI) is a burgeoning area of research that focuses o
 In this context, there are several works that try to develop human-centric and responsible buildings. Smart building facades for example are being developed that adapt to the external environment and react in an energy efficient manner \cite{ahmed2015development}. There are also several works that look at providing comfort to users using responsive materials that react to temperature, light, humidity and air quality \cite{fragkia2020exergy, holstov2015hygromorphic, kroner1997intelligent}. These include designing ``optimally informative" systems such as temperature calendars, air quality forecasts, noise level indicators, and wearables that appropriately inform occupants of their environment and also allow them to engage with comfort parameters to certain degrees  \cite{costanza2016bit, milenkovic2013improving, kim2020designing}. Other works focus on a ``gamified" approach to engage users with their environment and activities in a socially inclusive manner \cite{mathur2015tiny, kwallek1997impact, zhong2022augmenting}. 
 
 % Our perspective
-Therefore, much of the work towards developing human-centric buildings focus on changing the environmental variables that may in turn impact the occupants experiences. Instead, in this position paper we wish to reconsider the design of human-centric buildings through the perspective of occupant emotions ie. buildings that respond to humnan emotions.
+Therefore, much of the work towards developing human-centric buildings focus on changing the environmental variables that may in turn impact the occupants experiences. Instead, in this position paper we wish to reconsider the design of human-centric buildings through the perspective of occupant emotions ie. buildings that respond to human emotions.
 
 
-\section{Understanding Empathic Design for Buildings of the Digital Age}
+\section{Empathic Technologies for Shaping Human-Building Interactions}
 
-% Why should we design keeping in mind materiality
-A significant consequence of smart buildings is that occupants find themselves physically immersed within an interactive object, and therefore experience interactions in a multi-sensory manner \cite{nembrini2017human}. Moreover, providing for subjective comfort to occupants within a hybrid space that is used by different people with varying usage goals remains a relevant question. 
+% Why empathic buildings
+A significant consequence of smart buildings is that occupants find themselves physically immersed within an interactive object, and therefore experience interactions in a multi-sensory manner \cite{nembrini2017human}. Understanding the exact nature of such interactions, and shaping them to positively impact humans is an important aspect of HCI.   
 
-We believe that the materials experience framework can be used as a novel means to understand the relationship between materials and occupants at different experiential levels (sensorial, affective, interpretive and performative) within hybrid spaces \cite{giaccardi2015foundations}. Different tangible and intangible materials in hybrid spaces can be utilised to shape the ways in which occupants experience emotional and physical comfort, and consequently learning attitudes. Moreover, material
-experiences can play a more ubiquitous role in fostering occupants' interactions with non-digital elements of the building through digital means - a key concern in HBI \cite{nembrini2017human}. 
+Providing for varied and subjective experiences to occupants within a hybrid space that is used by different people with varying usage goals is a challenge. 
+
+Empathic buildings that understand their occupants emotions can make use of ubiquitous tangible and intangible artifacts to infer occupant emotions and shape the ways in which occupants experience emotions in buildings.
+
+% Moreover, material
+% experiences can play a more ubiquitous role in fostering occupants' interactions with non-digital elements of the building through digital means - a key concern in HBI \cite{nembrini2017human}. 
+
+\subsection{A Digital Building of the Present}
+\label{subsec:building}
+Our motivation to call for empathic buildings comes from occupying and experiencing one such digital building that houses students, researchers, entrepreneurs, and businesses.
+
+The building labelled as an ``intelligent hub" was designed to be empathic from an architectural standpoint, with a vision to be sustainable, circular and flexible, healthy, and inspiring \footnote{https://lab42.uva.nl/}. The building is designed to be more "human-centric" in the sense that spaces in the building are designed to elicit or evoke certain human emotions and sentiments. To that end, different artifacts in the interior and exterior have been designed using a variety of materials and design features. The building aims to encourage openness in the lower floors - a glass atrium is used to convey the feeling of transparency to occupants who can view all ongoing activities of the building. \todo{photo of robotics lab} A combination of colourful plinth, and display of digital artifacts are used to make occupants feel curious and stimulate collaboration. Quietness and concentration in the upper zones are indicated by recycled felt fashioned into panels and inner walls to promote acoustics. A combination of intelligent sensors throughout the building control light, temperature, and air quality to provide for comfort based on the number of occupants, and external and indoor environmental conditions.
+
+\begin{figure}[htbp]
+\centering
+\subfloat[Privacy enabling curtains in a high concentration zone\label{fig:curtain}]{\includegraphics[width=0.2\textwidth]{images/privacy-curtains.jpg}}\hfill
+\subfloat[Sheer fabric of the curtains questions the privacy-providing aspect.\label{fig:curtain-sheer}] {\includegraphics[width=0.2\textwidth]{images/privacy-curtains-fabric.jpg}}\hfill
+\subfloat[The building staircase designed to encourage users to take the stairs.\label{fig:staircase}]{\includegraphics[width=0.2\textwidth]{images/stairs.jpg}}\hfill
+\subfloat[Wrought iron railings and smooth black surfaces \label{fig:staircase-railing}]{\includegraphics[width=0.2\textwidth]
+{images/stairs-closeup.jpg}}
+\subfloat[A large screen upon entering the building that serves as a means for communication \label{fig:screen}]{\includegraphics[width=0.2\textwidth]
+{images/screen.jpg}}
+\caption{Materials in a smart building that raise questions about its nature and the type of experience it provides to the buildings occupants.} \label{fig:lab42-examples}
+\end{figure}
+
+Figure \ref{fig:lab42-examples} shows three tangible artifacts in the building designed to be empathic from an architectural standpoint, but raise questions about the nature of their role in interacting with the building occupants. We speculate on the shortcomings of these artifacts and suggest how intelligent  alternatives could be employed towards truly empathic buildings.
+
+\subsubsection*{The Privacy Curtains}
+Figures \ref{fig:curtain} and \ref{fig:curtain-sheer} show curtains around certain work spaces in the middle of high-traffic corridors. The curtains serve as a means of providing a sense of privacy and recluse amidst the open and public spaces. However, the sheer material instils a feeling of transparency and therefore, the clash between the concept of privacy and a sheer curtain creates a feeling of confusion and frustration regarding its purpose. Instead, we propose that the curtains could be made  more empathic by intelligently transforming from sheer to fully opaque by in-situ inferring occupants privacy needs (for eg., sensing anxiety).  
+
+\subsubsection*{An Encouraging Staircase}
+The building promotes its staircase in Figures \ref{fig:staircase} and \ref{fig:staircase-railing} as being designed to inspire people to climb stairs rather than use a lift. However, cold and textured wrought iron railings discourages one from using it. The black, oversized, and floating structure floating, casts a foreboding  shadow on the onlooker  and the brutalist design evokes a feeling of awe - something to observe, rather than use. We find that the staircase often fails to create a feeling of encouragement and push towards using it. Alternatively, a gamified and anthropomorphised staircase that incorporates interactive materials that respond to users activities may be more suited to simulate feelings of activity. 
+
+\subsubsection*{The Digital Interface to the Building}
+\todo[]{Try to add images of interface in use}
+A large screen in the building foyer accompanied by an interactive interface allows users to explore and learn different things about the building. The interface is an interactive tablet that can be accessed by clicking and moving information around. The screen presents itself a digital building attempting to be transparent and communicate with its occupants. This placement triggers intrigue in learning more about the building. However, limited information displayed prevents the device from becoming part of an occupant's daily practice (such as checking one's phone every morning). A conversational user interface (CUI) may be able to on the other hand serve a medium between the non-digital aspects of the building through a digital means. 
 
 % Our proposed case study
 \subsection{Our Proposed Case Study} 
-Towards developing empathic architecture that can infer occupant emotions and comfort, we are undertaking a preliminary case study in the aforementioned building. We aim to identify occupants' novel and subjective experiences that arise from interactions within the smart building. We are particularly interested in understanding experiences of occupant comfort (environmental) and emotions \cite{alavi2017comfort} which is key in built environments.  We wish to thereafter identify specific influential factors (tangible and intangible) that determine the overall sense of comfort and emotions in smart buildings spaces. The case study comprises two phases: (a) emotion and comfort label collection, and (b) building walk. First, we will conduct a short survey to obtain a large number of occupant emotion and comfort information based on different spaces in the building. Next, a building walk will be organised to obtain an in-depth understanding of occupants' perceptions - mental, emotional and physical towards different spaces in the building. During the walk, researchers will engage participants in conversations about each space, and conversations will follow the materials experience framework to understand the relationship between materials, occupants and practises within the different spaces of the building \cite{giaccardi2015foundations}. Questions will also investigate the four different experiential levels (sensory, interpretive, affective and per formative) and will include asking about impressions of the space, usage of space \textit{(How would you use this space? Why do you use this space? What kind of tasks would you perform in this space?)}, emotions in the space \textit{(What emotions do you associate with this space?)}, comfort \textit{(Is this space comfortable? Is there sufficient light, warmth, ventilation?)}, shortcomings and scope for improvement. Participants will also be encouraged to take photos of artifacts that stand out to them. Data collected from both phases will be analysed using thematic analysis, and lexical analysis \cite{braun2006using, xue2020mood}. 
+We wish to identify artifacts or spaces in buildings where architectural features of empathy design fall short and so could benefit from a more digital design. Towards developing such an empathic architecture that can infer occupant emotions, we are undertaking a preliminary case study in the aforementioned building. We aim to identify occupants' novel and subjective experiences that arise from interactions within the smart building. We are particularly interested in understanding experiences of occupant comfort (based on the indoor environmental) and emotions \cite{alavi2017comfort} which is key in built environments.  We wish to thereafter identify specific influential factors (tangible and intangible) that determine the overall sense of comfort and emotions in smart buildings spaces. The case study comprises two phases: (a) emotion and comfort label collection, and (b) building walk. First, we will conduct a short survey to obtain a large number of occupant emotion and comfort information based on different spaces in the building. Next, a building walk will be organised to obtain an in-depth understanding of occupants' perceptions - mental, emotional and physical towards different spaces in the building.
+
+During the walk, researchers will engage participants in conversations about each space, and conversations will form around what users expect of an empathic building of the future. Questions will investigate different experiential levels (sensory, interpretive, affective and performative) and will include asking about impressions of the space, usage of space \textit{(How would you use this space? Why do you use this space? What kind of tasks would you perform in this space?)}, emotions in the space \textit{(What emotions do you associate with this space?)}, comfort \textit{(Is this space comfortable? Is there sufficient light, warmth, ventilation?)}, shortcomings and scope for improvement. Data collected from both phases will be analysed using thematic analysis, and lexical analysis \cite{braun2006using, xue2020mood}. 
+
+\subsection{Privacy Considerations}
+\todo{}
 
 \subsection{Expected Contributions}
-Through our case study, we aim to identify specific artifacts both tangible and intangible, and the properties of these artifacts that impact building occupants. Additionally, we expect to gain an understanding of the lived-in bodily comfort and emotional experiences within smart learning spaces from an affective, and interpretive perspective \cite{giaccardi2015foundations}. Our work is a preliminary step towards design and development of spaces that can understand and assist in the emotional and comfort needs of occupants help create experiences that occupants might find lacking in smart buildings (for eg., sense of autonomy and control in an automated building) \cite{moreno2014user}, or enhance certain other experiences (for eg., feeling of groundedness and familiarity in a space used by many) \cite{rehman2022personalisedcomfort}.
-
-For example, the privacy curtains (Section \ref{subsec:building}, Figures \ref{fig:curtain} and \ref{fig:curtain-sheer}) could be better envisioned as a smart fabric that can intelligently transform from sheer to fully opaque to in-situ cater to varying privacy needs. Alternatively, materiality of objects could be expanded to materiality of space that in-situ infers occupants (negative) affective states, and attempts to alter it through means of emapthic responses. 
+Through our case study, we aim to identify specific artifacts both tangible and intangible, and the properties of these artifacts that impact building occupants' emotions. Additionally, we expect to gain an understanding of the lived-in bodily comfort and emotional experiences within smart learning spaces from an affective, and interpretive perspective \cite{giaccardi2015foundations}. Through our work, we aim to identify design spaces and artifacts that fail to fulfil an empathic role for the occupants. Our work is a preliminary step towards design and development of spaces that can understand and assist in the emotional and comfort needs of occupants help  to create experiences that occupants might find lacking in smart buildings (for eg., sense of autonomy and control in an automated building) \cite{moreno2014user}, or enhance certain other experiences (for eg., feeling of groundedness and familiarity in a space used by many) \cite{rehman2022personalisedcomfort}. We envision that our work forms the qualitative step twoards understanding users expectations from an empathic building and therby design for solutions that in-situ infer occupants (negative) affective states, and attempts to alter it through means of emapthic responses. 
 
 
 
 
 
-We believe that our findings may help put forth considerations for designing for occupants' comfort in built environments through the lens of material experiences design. 
-
-Design of built spaces (and the artifacts they encompass) needs to be realised for the specific needs of occupants. Our findings may be used for the design and development of materials that can help create experiences that occupants might find lacking in smart hybrid learning spaces (for eg., sense of autonomy and control in an automated building) \cite{moreno2014user}, or enhance certain other experiences (for eg., feeling of groundedness and familiarity in a space used by many) \cite{rehman2022personalisedcomfort}.  For example, 
-smart spaces could be designed with materials that in-situ infer occupants (negative) affective states, and attempt to alter it through means of emapthic responses. 
-
-We ultimately envision a design philosophy for smart, hybrid learning spaces that allow materials to shape technology and the ``smartness" of the space. We wish to use our discussion to bring together research communities of material and interaction design with comfort studies and smart buildings.
 
 
 \section{Conclusion}
