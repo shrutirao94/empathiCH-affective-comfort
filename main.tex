@@ -10,7 +10,8 @@
 
 %%%% Generic manuscript mode, required for submission
 %%%% and peer review
-\documentclass[manuscript, anonymous, review]{acmart}
+% \documentclass[manuscript, anonymous, review]{acmart}
+\documentclass [sigconf, review, anonymous] {acmart}
 \usepackage{todonotes}
 \usepackage{xcolor}
 \usepackage{subfig}
@@ -58,7 +59,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Empathic Technologies for Shaping Human-Centric Buildings of the Digital Age}
+\title{Towards Understanding Empathic Experiences for Shaping Human-Centric Buildings of the Digital Age}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -110,11 +111,23 @@ Given that people spend a significant amount of time within buildings, designing
        <concept_desc>Human-centered computing~Interaction design</concept_desc>
        <concept_significance>500</concept_significance>
        </concept>
+   <concept>
+       <concept_id>10003120.10003123.10010860</concept_id>
+       <concept_desc>Human-centered computing~Interaction design process and methods</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003120.10003121.10003126</concept_id>
+       <concept_desc>Human-centered computing~HCI theory, concepts and models</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
  </ccs2012>
 \end{CCSXML}
 
 \ccsdesc[500]{Human-centered computing}
 \ccsdesc[500]{Human-centered computing~Interaction design}
+\ccsdesc[300]{Human-centered computing~Interaction design process and methods}
+\ccsdesc[500]{Human-centered computing~HCI theory, concepts and models}
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
@@ -182,16 +195,19 @@ A significant consequence of smart buildings is that occupants find themselves p
 
 \subsection{A Digital Building of the Present}
 \label{subsec:building}
-Our motivation for designing empathic buildings comes from occupying and experiencing a digital building that houses students, researchers, entrepreneurs, and businesses. The building labelled as an ``intelligent hub" was primarily designed to be empathic from an architectural standpoint, with a vision to be sustainable, circular and flexible, healthy, and inspiring \footnote{https://lab42.uva.nl/}. Spaces in the building have been designed to elicit specific human emotions \cite{silo_michiel_2022}. Different artifacts in the interior and exterior have been designed using a variety of materials and design features. The building aims to encourage openness in the lower floors - a glass atrium is used to convey the feeling of transparency to occupants who can view all ongoing activities of the building. \todo{photo of robotics lab} A combination of colourful plinth, and display of digital artifacts are used to make occupants feel curious and stimulate collaboration. Quietness and concentration in the upper zones are indicated by specific placement of work spaces, lighting and acoustic treatment. A combination of intelligent sensors throughout the building control light, temperature, and air quality to provide for comfort based on the number of occupants, and external and indoor environmental conditions. However, we question the suitability of relying only on architectural design for invoking emotions and empathy in buildings. 
+Our motivation for designing empathic buildings comes from occupying and experiencing a digital building that houses students, researchers, entrepreneurs, and businesses. The building labelled as an ``intelligent hub" was primarily designed to be empathic from an architectural standpoint, with a vision to be sustainable, circular and flexible, healthy, and inspiring \footnote{https://lab42.uva.nl/}. Spaces in the building have been designed to elicit specific human emotions \cite{silo_michiel_2022}. Different artifacts in the interior and exterior have been designed using a variety of materials and design features. The building aims to encourage openness in the lower floors - a glass atrium is used to convey the feeling of transparency to occupants who can view all ongoing activities of the building. A combination of colourful plinth, and display of digital artifacts are used to make occupants feel curious and stimulate collaboration. Quietness and concentration in the upper zones are indicated by specific placement of work spaces, lighting and acoustic treatment. A combination of intelligent sensors throughout the building control light, temperature, and air quality to provide for comfort based on the number of occupants, and external and indoor environmental conditions. However, we question the suitability of relying only on architectural design for invoking emotions and empathy in buildings. 
 
 \begin{figure}[htbp]
 \centering
-\subfloat[Privacy enabling curtains in a high concentration zone\label{fig:curtain}]{\includegraphics[width=0.2\textwidth]{images/privacy-curtains.jpg}}\hfill
-\subfloat[Sheer fabric of the curtains questions the privacy-providing aspect.\label{fig:curtain-sheer}] {\includegraphics[width=0.2\textwidth]{images/curtain-sheer.jpg}}\hfill
-\subfloat[The building staircase designed to encourage users to take the stairs.\label{fig:staircase}]{\includegraphics[width=0.2\textwidth]{images/stairs.jpg}}\hfill
-\subfloat[Wrought iron railings and smooth black surfaces \label{fig:staircase-railing}]{\includegraphics[width=0.2\textwidth]
+\subfloat[Privacy enabling curtains in a high concentration zone\label{fig:curtain}]{\includegraphics[width=0.24\textwidth]{images/privacy-curtains.jpg}}
+\subfloat[Sheer fabric of the curtains questions the privacy-providing aspect.\label{fig:curtain-sheer}] {\includegraphics[width=0.24\textwidth]{images/curtain-sheer.jpg}}
+
+\subfloat[The building staircase designed to encourage users to take the stairs.\label{fig:staircase}]{\includegraphics[width=0.24\textwidth]{images/stairs.jpg}}
+\subfloat[Wrought iron railings and smooth black surfaces \label{fig:staircase-railing}]{\includegraphics[width=0.24\textwidth]
 {images/stairs-closeup.jpg}}
-\subfloat[A large screen upon entering the building that serves as a means for communication \label{fig:screen}]{\includegraphics[width=0.2\textwidth]
+
+\subfloat[A large screen upon entering the building that serves as a means for communication \label{fig:screen}]
+{\includegraphics[width=0.3\textwidth]
 {images/screen.jpg}}
 \caption{Materials in a smart building that raise questions about its nature and the type of experience it provides to the buildings occupants.} \label{fig:lab42-examples}
 \end{figure}
@@ -205,7 +221,6 @@ Figures \ref{fig:curtain} and \ref{fig:curtain-sheer} show curtains around certa
 The building promotes its staircase in Figures \ref{fig:staircase} and \ref{fig:staircase-railing} as being designed to inspire people to climb stairs rather than use the lift. However, the design by itself fails to draw occupants to use it - cold and textured wrought iron railings discourages touch and the black, oversized, and floating structure casts a foreboding  shadow on the onlooker,  evoking a feeling of awe - something to observe, rather than use. An empathic staircase that inspires movement could benefit from gamification or anthropomorphisation that for example shows calories burnt or muscles exercised as a motivator. 
 
 \subsubsection*{The Digital Interface to the Building}
-\todo[]{Try to add images of interface in use}
 A large screen in the building foyer accompanied by an interactive interface allows users to explore and learn different things about the building. The screen presents itself a digital building attempting to be transparent and communicate with its occupants. This placement triggers intrigue in learning more about the building. However, limited information displayed prevents the device from becoming part of an occupant's daily practice (such as checking one's phone every morning). We envision that a conversational user interface (CUI) may be able to serve as an emphatic medium between the non-digital aspects of the building through a digital means. 
 
 % Our proposed case study
